@@ -36,6 +36,7 @@ public class App {
      Tablica tabliczka = new Tablica();
 
 tabliczka.average();
+tabliczka.getMax();
 
 
     }
