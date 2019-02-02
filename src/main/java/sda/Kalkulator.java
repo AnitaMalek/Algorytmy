@@ -26,7 +26,7 @@ public class Kalkulator {
         }
     }
 
-    public int sumIsEven(int a, int b, int c) {
+    public int sumIsEven(int a, int b, int c, int d, int e) {
         int result = 0;
         if (isEven(a)) {
             result += a;
@@ -36,6 +36,40 @@ public class Kalkulator {
         }
         if (isEven(c)) {
             result += c;
+        }
+        if (isEven(d)) {
+            result += d;
+        }
+        if (isEven(e)) {
+            result += e;
+        }
+        return result;
+    }
+
+    public boolean isOdd(int value) {
+        if (value % 2 == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int sumIsOdd(int a, int b, int c, int d, int e) {
+        int result = 0;
+        if (isOdd(a)) {
+            result -= a;
+        }
+        if (isOdd(b)) {
+            result -= b;
+        }
+        if (isOdd(c)) {
+            result -= c;
+        }
+        if (isOdd(d)) {
+            result -= d;
+        }
+        if (isOdd(e)) {
+            result -= e;
         }
         return result;
     }
