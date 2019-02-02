@@ -8,29 +8,39 @@ import java.util.Scanner;
  */
 public class App {
     public static void main(String[] args) {
+//zad.1 i 2
+Scanner keyboard = new Scanner(System.in);
+Kalkulator kalk = new Kalkulator();
+        System.out.println("Insert value: ");
 
-        int i = 0;
-//        nieparzysta(7);
-        Scanner wprowadzanie = new Scanner(System.in);
-        i = wprowadzanie.nextInt();
+int a = keyboard.nextInt();
+        System.out.println("Value" + a + "is even: " + kalk.isEven(a));
 
-        System.out.println(i);
-        System.out.println(i);
+        //zad.3
+        System.out.println("Insert a: ");
+        int valueA = keyboard.nextInt();
+        System.out.println("Insert b: ");
+        int valueB = keyboard.nextInt();
+        System.out.println("Insert c: ");
+        int valueC = keyboard.nextInt();
+
+        System.out.println("Sum of even value: " + kalk.sumIsEven(valueA, valueB, valueC));
+
+
+
+
 
     }
-
-
-    public static void nieparzysta (int i) {
-        if (i % 2 == 1) {
-            System.out.println("liczba nieparzysta");;}
-        else{
-            System.out.println("liczba parzysta");}
-
-    }
-
-
-
 
 
 }
+
+
+
+
+
+
+
+
+
 
