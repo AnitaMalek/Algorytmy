@@ -1,5 +1,7 @@
 package sda;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -8,7 +10,12 @@ public class App {
     public static void main(String[] args) {
 
         int i = 0;
-        nieparzysta(6);
+//        nieparzysta(7);
+        Scanner wprowadzanie = new Scanner(System.in);
+        i = wprowadzanie.nextInt();
+
+        System.out.println(i);
+        System.out.println(i);
 
     }
 
@@ -20,6 +27,9 @@ public class App {
             System.out.println("liczba parzysta");}
 
     }
+
+
+
 
 
 }
